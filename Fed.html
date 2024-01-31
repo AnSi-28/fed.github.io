@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="fed.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>FED KIIT</title>
+    </head>
+    <body>
+        <div class="sign-in" id="popup"></div>
+        <div class="sign-box" id="popup_2">
+            <div class="close">
+                <span class="cross" onclick="closeSignin()">&#10060;</span>
+            </div>
+            <div>
+                <span class="hello-s">Hello !</span>
+            </div>
+            <div>
+                <span class="welcome-s">Welcome Back</span>
+            </div>
+            <div>
+                <input class="username" type="text" placeholder="Enter Username">
+            </div>
+            <div>
+                <input class="username" type="text" placeholder="Enter Password">
+            </div>
+            <div class="forgot">
+                <span class="f-p">Forgot Password?</span>
+            </div>
+            <div>
+                <button class="sign-button">Sign In</button>
+            </div>
+            <div>
+                <span class="continue">Or Continue With</span>
+            </div>
+            <div class="social">
+                <button class="b-1"><img src="social-logos/Google.svg"></button>
+                <button><img src="social-logos/Facebook.svg"></button>
+                <button class="b-3"><img src="social-logos/apple.webp"></button>
+            </div>
+            <div>
+                <span class="s-l">Don't Have An Account? Create Account!</span>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png">
+                <span class="fed">FED</span>
+            </div>
+            <div class="menu">
+                <span>Home</span><span>About</span><span onclick="openSignin()">Sign in</span>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="carousel">
+                <div class="slide-wrap">
+                    <div class="slider">
+                        <img id="1" src="Carousel/3.jpg">
+                        <img id="2" src="Carousel/2.jpg">
+                        <img id="3" src="Carousel/1.avif">
+                        <img id="4" src="Carousel/4.jpg">
+                    </div> 
+                    <div class="slider-nav">
+                        <a href="#1"></a>
+                        <a href="#2"></a>
+                        <a href="#3"></a>
+                        <a href="#4"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-text">
+                <div class="f-line">Let's Connect</div>
+                <div class="s-line">Illuminating the <span>ENTREPRENEUR</span> in you.</div>
+                <button class="m-button">ENROLL</button>
+            </div>
+            
+        </div>
+        <div class="last">
+            <div class="l-line-1">
+                Dive In
+            </div>
+            <div class="l-line-2">
+                to the endless POSSIBILITIES
+            </div>
+            <div class="b-box"></div>
+            <div class="b-box-2">
+                <img class="b-img" src="Carousel/3.jpg">
+                <div class="b-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="end-logo">
+                <img src="logo.png">
+                <span class="fed">FED</span>
+                </div>
+                <div class="end-menu">
+                    <span>Home</span><span>About</span><span>Service</span><span>Contact Us</span>
+                </div>
+                <div class="end-social">
+                    <button>Li</button><button>Gi</button><button>Ig</button><button>Tw</button>
+                </div>
+                <div class="end-line">
+                    <hr width="90%" color="#FFA500" />
+
+                </div>
+                <div class="end-copy">
+                    Copyright&#64;Anmol
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+            let popup_2=document.getElementById("popup_2");
+
+            function openSignin(){
+                popup.classList.add("open-sign-in");
+                popup_2.classList.add("open-sign-box");
+               
+            }
+            function closeSignin(){
+                popup.classList.remove("open-sign-in");
+                popup_2.classList.remove("open-sign-box");
+               
+            }
+        </script>
+    </body>
+</html>
